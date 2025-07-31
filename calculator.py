@@ -22,7 +22,7 @@ def square_root(a):
 def hypotenuse(a, b):
     return math.hypot(a, b)
 
-def sub(a, b):
+def subtract(a, b):
     return a - b
 
 def mul(a, b): 
@@ -33,7 +33,7 @@ def div(a, b):
         raise ZeroDivisionError
     return b / a # raise ZeroDivisionError if a == 0
 
-def log(a, b):
+def logarithm(a, b):
     if a <= 0 or a == 1:
         raise ValueError("Logarithm base must be greater than 0 and not equal to 1.")
     if b <= 0:

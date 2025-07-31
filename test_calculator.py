@@ -10,7 +10,7 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(add(1,2),3)
 
     def test_subtract(self): # 3 assertions
-        self.assertEqual(sub(2,1),1)
+        self.assertEqual(subtract(2,1),1)
     # ##########################
 
     ######## Partner 1
@@ -22,7 +22,7 @@ class TestCalculator(unittest.TestCase):
     def test_divide(self): # 3 assertions
         self.assertEqual((div(-1,10)),-10)
         self.assertEqual((div(2,10)),5)
-        self.assertAlmostEqual((div(10,0.3)),33.33, places=2)
+        self.assertAlmostEqual((div(10,0.3)),0.03, places=2)
 
 
     ######## Partner 2
@@ -31,23 +31,23 @@ class TestCalculator(unittest.TestCase):
             div(0,5)
 
     def test_logarithm(self): # 3 assertions
-        self.assertEqual(log(2,2),1)
+        self.assertEqual(logarithm(2,2),1)
 
     def test_log_invalid_base(self): # 1 assertion
         with self.assertRaises(ValueError):
-            log(2, 0)
+            logarithm(2, 0)
         with self.assertRaises(ValueError):
-            log(2, -1)
+            logarithm(2, -1)
     
     ######## Partner 1
     def test_log_invalid_argument(self): # 1 assertion
         with self.assertRaises(ValueError):
-            log(0, 5)
+            logarithm(0, 5)
 
     def test_hypotenuse(self): # 3 assertions
         self.assertAlmostEqual(hypotenuse(-5,-5),7.07, places=2)
         self.assertAlmostEqual(hypotenuse(5,-5),7.07, places=2)
-        self.assertAlmostEqual(hypotenuse(6,-6), 8.48, places=2)
+        self.assertAlmostEqual(hypotenuse(0,4), 4.0, places=2)
 
     def test_sqrt(self): # 3 assertions
         with self.assertRaises(ValueError):

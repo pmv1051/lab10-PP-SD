@@ -1,3 +1,8 @@
+# https://github.com/pmv1051/lab10-PP-SD
+# Partner 1: Prem Patel
+# Partner 2: Samuel Deegan
+
+
 """
 calculator.py
 - Defines functions used to create a simple calculator

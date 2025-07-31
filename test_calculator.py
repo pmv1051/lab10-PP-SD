@@ -1,3 +1,6 @@
+# https://github.com/pmv1051/lab10-PP-SD
+# Partner 1: Prem Patel
+# Partner 2: Samuel Deegan
 import unittest
 from calculator import *
 

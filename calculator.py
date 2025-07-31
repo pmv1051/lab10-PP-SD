@@ -9,17 +9,6 @@ import math
 def add(a, b): 
     return a+b
 
-def sub(a, b):
-    return a - b
-
-def mul(a, b): 
-    return a * b
-
-def log(a, b):
-    if a < 0 or b < 0:
-        raise ValueError
-    return math.log(b, a)
-
 def square_root(a):
     if a < 0:
         raise ValueError

@@ -8,18 +8,12 @@ import math
 # First example
 def add(a, b): 
     return a+b
-<<<<<<< HEAD
 
 def sub(a, b):
     return a - b
 
 def mul(a, b): 
     return a * b
-
-def div(a, b): 
-    if a == 0:
-        raise ZeroDivisionError
-    return b / a # raise ZeroDivisionError if a == 0
 
 def log(a, b):
     if a < 0 or b < 0:
@@ -33,8 +27,6 @@ def square_root(a):
 
 def hypotenuse(a, b):
     return math.hypot(a, b)
-=======
->>>>>>> e31479ded64926c4fa6d1268d29cb04b7e873c18
 
 def sub(a, b):
     return a - b
